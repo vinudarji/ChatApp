@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Initial setup
-    const userName = prompt("Enter your username:");
+    const userName = prompt("Enter your username::");
     currentUser = { id: generateRandomAlphanumeric(8), UserName: userName };
     socket.emit("joinChat", currentUser);
     currentUserElement.innerHTML = 'I am ' + currentUser.UserName;
